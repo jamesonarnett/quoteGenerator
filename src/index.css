@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   background-color: rgb(128, 128, 128);
   height: 100%;
   display: flex;
@@ -10,30 +9,106 @@ body {
   /* better background here */
 }
 
-.title {
+.titleAll {
   text-align: center;
-  margin-top: 10vh;
-  /* fancy font here */
+}
+
+.title {
+  font-family: "The Nautigal", cursive;
+  font-size: 7rem;
+}
+
+.titleText {
+  font-size: 1.5rem;
+  margin-top: -5rem;
 }
 
 .outerQuoteBox {
-  background-color: rgb(138, 125, 170);
+  background-color: rgb(128, 128, 128);
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 250px;
+  width: 700px;
+  height: 350px;
   border: 5px solid black;
-  margin-top: 23vh;
+  margin-top: 10vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .innerQuoteBox {
-  height: 100%;
+  text-align: center;
 }
 
 .btn {
-  margin: 0.3rem;
+  display: inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.5em 0.5em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #000000;
+  text-align: center;
+  transition: all 0.15s;
+}
+.btn:hover {
+  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.bouncy {
+  animation: bouncy 5s 3 linear;
+  position: relative;
+}
+@keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.5em 0.5em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #1da1f2;
+  text-align: center;
+  transition: all 0.15s;
+}
+.btn2:hover {
+  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+  color: #000000;
+  border-color: #ffffff;
 }
